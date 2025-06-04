@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
   <!-- GTM HEAD -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    <!-- Google Tag Manager -->
+   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -23,9 +23,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-family: sans-serif;
       padding: 40px;
     }
-    button {
+    button, a {
       padding: 10px 20px;
       font-size: 16px;
+      margin: 10px 0;
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+    }
+    button:hover, a:hover {
+      background-color: #0056b3;
     }
     form {
       margin-top: 20px;
@@ -39,20 +49,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
 
-  <!-- GTM BODY -->
  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFSFSKZ5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <h1>Мій тестовий сайт</h1>
+  <h1>Мій тестовий сайт для GTM</h1>
 
   <p>
-    <a href="tel:+123456789" id="phone-link">Подзвонити</a><br />
-    <a href="mailto:test@example.com" id="email-link">Написати на email</a>
+    <a href="tel:+3807682345" id="phone-link">Подзвонити: +3807682345</a><br />
+    <a href="mailto:falinskiy@gmail.com" id="email-link">Email: falinskiy@gmail.com</a>
   </p>
 
-  <button id="buy-button">Купити зараз</button>
+  <button id="simple-button">Проста кнопка</button>
+
+  <a href="https://example.com" target="_blank" id="external-link">Перейти на інший сайт</a>
 
   <form id="contact-form">
     <input type="text" placeholder="Ваше ім’я" name="name" /><br />
