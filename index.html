@@ -14,6 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TFSFSKZ5');</script>
 <!-- End Google Tag Manager -->
+  </script>
   <!-- End GTM HEAD -->
 
   <style>
@@ -21,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-family: sans-serif;
       padding: 40px;
     }
-    button, a {
+    button, a, span.clickable {
       padding: 10px 20px;
       font-size: 16px;
       margin: 10px 0;
@@ -31,8 +32,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background-color: #007bff;
       border: none;
       border-radius: 4px;
+      cursor: pointer;
     }
-    button:hover, a:hover {
+    button:hover, a:hover, span.clickable:hover {
       background-color: #0056b3;
     }
     form {
@@ -47,15 +49,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFSFSKZ5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
   <h1>Мій тестовий сайт для GTM</h1>
 
   <p>
-    <a href="tel:+3807682345" id="phone-link">Подзвонити: +3807682345</a><br />
-    <a href="mailto:falinskiy@gmail.com" id="email-link">Email: falinskiy@gmail.com</a>
+    <span id="phone-text" class="clickable">+3807682345</span><br />
+    <span id="email-text" class="clickable">falinskiy@gmail.com</span>
   </p>
 
   <button id="simple-button">Проста кнопка</button>
