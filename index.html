@@ -4,21 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GTM Test Site</title>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TFSFSKZ5');
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TFSFSKZ5');
   </script>
-  <!-- End GTM HEAD -->
+  <!-- End Google Tag Manager -->
 
   <style>
     body {
       font-family: sans-serif;
       padding: 40px;
     }
-    button, a, span.clickable {
+    button, a.button-style, span.clickable {
       padding: 10px 20px;
       font-size: 16px;
       margin: 10px 0;
@@ -30,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-radius: 4px;
       cursor: pointer;
     }
-    button:hover, a:hover, span.clickable:hover {
+    button:hover, a.button-style:hover, span.clickable:hover {
       background-color: #0056b3;
     }
     form {
@@ -46,20 +48,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFSFSKZ5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFSFSKZ5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <h1>Мій тестовий сайт для GTM</h1>
 
   <p>
-    <span id="phone-text" class="clickable">+3807682345</span><br />
-    <span id="email-text" class="clickable">falinskiy@gmail.com</span>
+    Телефон: 
+    <a href="tel:+3807682345" id="phone-text">+3807682345</a><br />
+    Email: 
+    <a href="mailto:falinskiy@gmail.com" id="email-text">falinskiy@gmail.com</a>
   </p>
 
   <button id="simple-button">Проста кнопка</button>
 
-  <a href="https://check.gov.ua" target="_blank" id="external-link">Перейти на check.gov.ua</a>
+  <p>
+    <a href="https://check.gov.ua" target="_blank" id="external-link" class="button-style">
+      Перейти на check.gov.ua
+    </a>
+  </p>
 
   <form id="contact-form">
     <input type="text" placeholder="Ваше ім’я" name="name" /><br />
