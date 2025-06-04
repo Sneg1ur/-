@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTM Test Site</title>
+
+  <!-- GTM HEAD -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX'); // <-- ВСТАВ СВІЙ ID
+  </script>
+  <!-- End GTM HEAD -->
+
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input {
+      margin: 5px 0;
+      padding: 8px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GTM BODY -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End GTM BODY -->
+
+  <h1>Мій тестовий сайт</h1>
+
+  <p>
+    <a href="tel:+123456789" id="phone-link">Подзвонити</a><br />
+    <a href="mailto:test@example.com" id="email-link">Написати на email</a>
+  </p>
+
+  <button id="buy-button">Купити зараз</button>
+
+  <form id="contact-form">
+    <input type="text" placeholder="Ваше ім’я" name="name" /><br />
+    <input type="email" placeholder="Ваш email" name="email" /><br />
+    <button type="submit">Надіслати</button>
+  </form>
+
+</body>
+</html>
